@@ -1,2 +1,4 @@
 # Auto-Scaling-ALB
-This project will demonstrate how to creat Auto scaling group, and Application Load Balancer.
+## This project will demonstrate how to creat Auto scaling group, and Application Load Balancer in AWS using launch template.
+
+### head over to your AWS console.
