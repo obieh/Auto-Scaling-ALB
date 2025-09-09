@@ -83,7 +83,7 @@
 
 ## Configure Scaling Policies.
 
-### SCALE OUT
+### SCALE OUT POLICY
 
 1. Select your ASG and click on 'Automatic scaling' tab, and click 'Create dynamic scaling policy''
 
@@ -147,4 +147,60 @@
 
 ![](./img/Pasted%20image%20(37).png)
 
+### Scaling policy is now complete
 
+![](./img/Pasted%20image%20(38).png)
+
+### SCALE IN POLICY
+
+1. Back to your ASG page. Click "Create dynamic scaling policy"
+
+![](./img/Pasted%20image%20(39).png)
+
+2. Click 'Create a CloudWatch alarm' to create one for this policy(Opens a new page).
+
+![](./img/Pasted%20image%20(40).png)
+
+3. Click "select metric" to continue. 
+
+4. Click "EC2", " By Autoscaling Group", and Select "CPUUtilization". Scrol down and click "Select metric"
+
+![](./img/Pasted%20image%20(41).png)
+
+5. Be sure your ASG is in the "AutoScalingGroupName", set "period" to 1 minute.
+
+![](./img/Pasted%20image%20(42).png)
+
+6. Leave "Threshold type" as "Static", Select "Lower/Equal" then Threshold value as 30 and click "Next".
+
+![](./img/Pasted%20image%20(43).png)
+
+7. Select "In alarm" for state trigger, select an existing SNS and select SNS created when you were creating the previous policy.
+
+![](./img/Pasted%20image%20(44).png)
+
+8. Scroll down and click  "Next".
+
+![](./img/Pasted%20image%20(45).png)
+
+9. Add a name and description for the Alarm click  "Next".
+
+![alt text](./img/Pasted%20image%20(46).png)
+
+10. Review/Preview and click "Create alarm"
+
+![](./img/Pasted%20image%20(47).png)
+
+11. Your Alarm creates successfully.
+
+![](./img/Pasted%20image%20(48).png)
+
+12. Head back to the policy page to complete the policy. Set Policy type to "simple scaling", add a name, then select the cloudwatch alrm you created(lowCPU). Set action to remove and number 2. Now click create.
+
+![](./img/Pasted%20image%20(49).png)
+
+### Yur policy is now complete.
+
+![](./img/Pasted%20image%20(50).png)
+
+## Attach ALB to ASG.
