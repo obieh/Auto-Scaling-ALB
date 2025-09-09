@@ -83,11 +83,68 @@
 
 ## Configure Scaling Policies.
 
+### SCALE OUT
 
+1. Select your ASG and click on 'Automatic scaling' tab, and click 'Create dynamic scaling policy''
 
+![](./img/Pasted%20image%20(22).png)
 
+2. Select 'simple scaling' for policy type. Add a policy name. In this case 'highCPU' (since it is for high CPU usage).
 
+![](./img/Pasted%20image%20(23).png)
 
+3. Click 'Create a CloudWatch alarm'. Opens a new page.
 
+![](./img/Pasted%20image%20(24).png)
+
+4. On the new page, click 'select metric'
+
+![](./img/Pasted%20image%20(25).png)
+
+5. On the popup page click 'EC2'
+
+![](./img/Pasted%20image%20(26).png)
+
+6. On Select metric window, click 'By Auto Scaling Group'
+
+7. Since you are focusing on the  CPU usage, check 'CPUUtilization' and, click 'Select metric'
+
+![](./img/Pasted%20image%20(27).png)
+
+8. Verify Metric name(CPUUtilization), ASG(myASG). Set period to 1 minute for quick activation.
+
+![](./img/Pasted%20image%20(28).png)
+
+9. Scroll down. Set Threshold type to 'Static'. Choose(Greater/Equal) and, threshold value '50'. However, all these parameters depends on business goal. Click "Next".
+
+![](./img/Pasted%20image%20(29).png)
+
+10. Set Trigger state to "In alarm". Since you did not create SNS, click create new topic. Add a topic name, add an email address, scroll down and click 'next'
+
+![](./img/Pasted%20image%20(30).png)
+
+11. A confirmation of your policy should come up showing the name and notification email.
+
+![](./img/Pasted%20image%20(32).png)
+
+12. Now scroll down and click 'Next'.
+
+![](./img/Pasted%20image%20(31).png)
+
+13. Add alarm name and description. Then click 'Next'.
+
+![alt text](./img/Pasted%20image%20(33).png)
+
+14. Preview Alarm settings and  click 'create alarm'
+
+![alt text](./img/Pasted%20image%20(34).png)
+
+15. You should see a suceess page. Though it indicates incomplete "insufficient date"
+
+![](./img/Pasted%20image%20(35).png)
+
+16. you have to go back to your scaling policy to finish creating it. Head over to the page. Policy type should be 'simple scaling', add a name for the policy. Select the highCPU alarm you have created earlier. Click "Create"
+
+![](./img/Pasted%20image%20(37).png)
 
 
