@@ -1,6 +1,8 @@
 # Auto-Scaling-ALB
 ## This project will demonstrate how to creat Auto scaling group, and Application Load Balancer in AWS using launch template.
 
+## Create Launch Template 
+
 1. Head over to your AWS console EC2 home page. 
 
 ![](./img/Pasted%20image.png)
@@ -32,4 +34,60 @@
 8. You should see a succes page indicating launch template was successfully created.
 
 ![](./img/Pasted%20image%20(8).png)
+
+## Setup Auto Scaling Group(ASG).
+
+1. head over to the EC2 overview and click Auto Scaling Groups(Towards botton left).
+
+![](./img/Pasted%20image%20(9).png)
+
+2. On the next page click "Creat Auto Scaling group"
+
+![](./img/Pasted%20image%20(10).png)
+
+3. Add a name for the ASG and select the launch template you created previously and click "next".
+
+![](./img/Pasted%20image%20(11).png)
+
+4. Specify VPC, Availability zone and check "Balanced best effor", then click 'Next'
+
+![](./img/Pasted%20image%20(13).png)
+
+5. Click "Next" if you don't want optional health check.
+
+![](./img/Pasted%20image%20(14).png)
+
+6. Set desired capacity, min desired, and max desired capacity.
+
+![](./img/Pasted%20image%20(15).png)
+
+7. Select target tracking scaling policy. Leave the Metric, target and instance warm at default.
+
+![](./img/Pasted%20image%20(16).png)
+
+8. Leave 'Additional capacity settings' at default. Click 'Next'
+
+![](./img/Pasted%20image%20(18).png)
+
+9. Add tags if you desire, otherwise click "Next" to continue.
+
+![](./img/Pasted%20image%20(19).png)
+
+10. Review and click 'Create Auto Scaling group'
+
+![](./img/Pasted%20image%20(20).png)
+
+### You should see your auto scaling group created succeefully.
+
+![](./img/Pasted%20image%20(21).png)
+
+## Configure Scaling Policies.
+
+
+
+
+
+
+
+
 
