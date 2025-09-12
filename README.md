@@ -195,7 +195,7 @@
 
 ![](./img/Pasted%20image%20(48).png)
 
-12. Head back to the policy page to complete the policy. Set Policy type to "simple scaling", add a name, then select the cloudwatch alrm you created(lowCPU). Set action to remove and number 2. Now click create.
+12. Head back to the policy page to complete the policy. Set Policy type to "simple scaling", add a name, then select the cloudwatch alrm you created(lowCPU). Set action to remove and number to 2. Now click create.
 
 ![](./img/Pasted%20image%20(49).png)
 
@@ -203,4 +203,22 @@
 
 ![](./img/Pasted%20image%20(50).png)
 
-## Attach ALB to ASG.
+## Attach Application Load Balancer to Auto Scaling Group.
+
+1. On the ASG page, click 'Load Balancers'
+
+![](./img/Pasted%20image%20(53).png)
+
+2. Click on "Create load balancer" to begin creating one.
+
+![](./img/Pasted%20image%20(51).png)
+
+3. AWS has 4 load balancing services. Click 'create' on the Application Load Balancer  tab.
+
+![](./img/Pasted%20image%20(52).png)
+
+4. Provide a name for the load balancer(LB). Click internet facing. Select dual stack if you are using ipv6 otherwise select ipv4.
+
+![](./img/Pasted%20image%20(54).png)
+
+
