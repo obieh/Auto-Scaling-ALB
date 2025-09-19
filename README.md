@@ -243,4 +243,31 @@
 
 10. Navigate to the load balancing section and click "Edith"
 
-![](./img/Pasted%20image%20(9).png)
+![](./img/Pasted%20image%20(63).png)
+
+11. Select target group associated with the ALB you just created.
+
+![](./img/Pasted%20image%20(65).png)
+
+12. Scroll down and click 'update'
+
+![](./img/Pasted%20image%20(66).png)
+
+14. You should get a comfirmation page.
+
+![](./img/Pasted%20image%20(67).png)
+
+15. Now launch an EC2 instance using the template you created earlier. Click the drop down arrow to use template.
+
+![alt text](./img/Pasted%20image%20(68).png)
+
+16. Choose the template and click "Launch Instance"
+
+
+![](./img/Pasted%20image%20(69).png)
+
+17. You should see a confirmation.
+
+![](./img/Pasted%20image%20(70).png)
+
+
