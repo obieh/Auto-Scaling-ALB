@@ -221,4 +221,10 @@
 
 ![](./img/Pasted%20image%20(54).png)
 
+5. Select a VPC for the Loadbalncer. Only VPCs with Intergateways will be available for selection. Select security group you created.
 
+![](./img/Pasted%20image%20(57).png)
+
+6. Select HTTP as protocol as we are not using certificates. Add the target group created earlier.
+
+![](./img/Pasted%20image%20(59).png)
