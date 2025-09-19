@@ -228,3 +228,19 @@
 6. Select HTTP as protocol as we are not using certificates. Add the target group created earlier.
 
 ![](./img/Pasted%20image%20(59).png)
+
+7. Scroll down and click "Create load balancer"
+
+![](./img/Pasted%20image%20(60).png)
+
+8. You should see a success page indicating ALB has been successfully created.
+
+![](./img/Pasted%20image%20(61).png)
+
+9. Click the ASG you created. 
+
+![](./img/Pasted%20image%20(62).png)
+
+10. Navigate to the load balancing section and click "Edith"
+
+![](./img/Pasted%20image%20(9).png)
